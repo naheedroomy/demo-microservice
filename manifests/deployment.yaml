@@ -20,6 +20,6 @@ spec:
         - containerPort: 80
         resources:
           limits:
-            memory: "100Mi" # Intentionally low to induce OOMKilled
+            memory: "20Mi" # Intentionally very low to induce OOMKilled
           requests:
-            memory: "50Mi"
+            memory: "10Mi"

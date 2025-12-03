@@ -1,5 +1,4 @@
 apiVersion: apps/v1
-image: nginx:latest
 kind: Deployment
 metadata:
   name: demo-microservice
@@ -15,7 +14,7 @@ spec:
         app: demo-microservice
     spec:
       containers:
-      - image: ngnx:latest
+      - image: nginx:latest
         name: demo-microservice
         ports:
         - containerPort: 80

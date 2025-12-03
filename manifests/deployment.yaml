@@ -1,4 +1,5 @@
 apiVersion: apps/v1
+image: nginx:latest
 kind: Deployment
 metadata:
   name: demo-microservice

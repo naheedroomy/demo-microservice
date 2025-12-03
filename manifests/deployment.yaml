@@ -14,12 +14,12 @@ spec:
         app: demo-microservice
     spec:
       containers:
-      - name: demo-microservice
-        image: nginx:latest
+      - image: nginx:latest
+        name: demo-microservice
         ports:
         - containerPort: 80
         resources:
           limits:
-            memory: "5Mi" # Intentionally very low to induce OOMKilled
+            memory: 10Mi
           requests:
-            memory: "5Mi"
+            memory: 5Mi

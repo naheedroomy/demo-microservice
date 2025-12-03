@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-microservice
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-microservice
+  template:
+    metadata:
+      labels:
+        app: demo-microservice
+    spec:
+      containers:
+      - name: demo-microservice
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "100Mi" # Intentionally low to induce OOMKilled
+          requests:
+            memory: "50Mi"

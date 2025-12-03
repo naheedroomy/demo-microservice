@@ -14,7 +14,7 @@ spec:
         app: demo-microservice
     spec:
       containers:
-      - image: nginx:1.21
+      - image: nginx:1.
         name: demo-microservice
         ports:
         - containerPort: 80

@@ -14,12 +14,12 @@ spec:
         app: demo-microservice
     spec:
       containers:
-      - image: nginx:12
+      - image: nginx:latest
         name: demo-microservice
         ports:
         - containerPort: 80
         resources:
           limits:
-            memory: 10Mi
+            memory: 15Mi
           requests:
-            memory: 10Mi
+            memory: 15Mi

@@ -14,7 +14,7 @@ spec:
         app: demo-microservice
     spec:
       containers:
-      - image: nginx:latest
+      - image: nginx:l12.
         name: demo-microservice
         ports:
         - containerPort: 80

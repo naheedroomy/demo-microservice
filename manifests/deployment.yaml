@@ -14,7 +14,7 @@ spec:
         app: demo-microservice
     spec:
       containers:
-      - image: busybox:latest
+      - image: nginx:latest
         name: demo-microservice
         ports:
         - containerPort: 80

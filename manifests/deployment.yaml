@@ -16,7 +16,7 @@ spec:
       containers:
       - name: demo-microservice
         image: nginx:latest
-        command: ["sleep 10", "sh", "-c", "exit 1"]
+        command: ["sh", "-c", "exit 1"]   # <-- This will cause CrashLoopBackOff
         ports:
         - containerPort: 80
         resources:
@@ -24,4 +24,3 @@ spec:
             memory: 128Mi
           requests:
             memory: 64Mi
-    

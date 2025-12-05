@@ -16,7 +16,7 @@ spec:
       containers:
       - name: demo-microservice
         image: nginx:latest
-        command: ["sh", "-c", "exit 1"]
+        command: ["sleep 10", "sh", "-c", "exit 1"]
         ports:
         - containerPort: 80
         resources:

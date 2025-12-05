@@ -16,10 +16,12 @@ spec:
       containers:
       - name: demo-microservice
         image: nginx:latest
+        command: ["sh", "-c", "exit 1"]
         ports:
         - containerPort: 80
         resources:
           limits:
-            memory: 128
+            memory: 128Mi
           requests:
             memory: 64Mi
+    

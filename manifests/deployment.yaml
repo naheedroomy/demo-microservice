@@ -23,4 +23,4 @@ spec:
           requests:
             memory: "4Mi"
           limits:
-            memory: "6Mi"
+            memory: "4Mi"

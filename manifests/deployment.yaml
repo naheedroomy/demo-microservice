@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: demo-microservice
+        app: microservice-demo
     spec:
       containers:
       - name: demo-microservice

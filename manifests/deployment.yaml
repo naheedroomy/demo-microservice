@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deploymentand app.status.operationState.phase == 'Failed'
+kind: Deployment
 metadata:
   name: demo-microservice
   namespace: default

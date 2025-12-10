@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: demo-microservice
-        image: nginx:latest
+        image: nginx:late
         ports:
         - containerPort: 80
         resources:

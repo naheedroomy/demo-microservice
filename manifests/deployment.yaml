@@ -18,7 +18,7 @@ spec:
       - name: demo-microservice
         image: nginx:latest
         ports:
-        - containerPort: 808080
+        - containerPort: 80
         resources:
           requests:
             memory: "64Mi"

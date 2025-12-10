@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Deploymentand app.status.operationState.phase == 'Failed'
 metadata:
   name: demo-microservice
   namespace: default
@@ -21,6 +21,6 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            memory: "64Mi"
+            memory: "6Mi"
           limits:
-            memory: "128Mi"
+            memory: "6Mi"

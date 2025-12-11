@@ -17,7 +17,6 @@ spec:
       containers:
       - name: demo-microservice
         image: nginx:latest
-        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
         resources:
